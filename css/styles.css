@@ -1,0 +1,220 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  color: var(--main-text-color);
+  height: auto;
+  background-color: #f5f4fa;
+}
+
+/*--------------Main site text color---------------*/
+:root {
+  --main-text-color: #212121;
+  --sub-text-color: #757575;
+  --hover-focus-text-color: #2196f3;
+  --adress-mail-color-header: #757575;
+  --adress-mail-color-footer: #ffffff 60%;
+}
+
+/*-----------------Logo stalys---------------------*/
+.logo {
+  font-family: Raleway, sans-serif
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+.logo-web {
+  color: var(--hover-focus-text-color);
+}
+
+/*-------------Header text decoration--------------*/
+
+.header-navigation {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  display: inline-block;
+}
+
+.header-navigation-list {
+  list-style: none;
+}
+
+.header-navigation-item {
+  display: inline-block;
+}
+
+.header-navigation-link {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.header-conection {
+  display: inline-block;
+}
+
+.header-mail,
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  color: var(--adress-mail-color-header);
+}
+
+.header-tel:hover,
+.header-mail:hover,
+.header-tel:focus,
+.header-mail:focus,
+.header-navigation-link:hover,
+.header-navigation-link:focus {
+  color: var(--hover-focus-text-color);
+}
+
+/*-------------Footer text decoration-------------*/
+.footer-link-mail,
+.footer-link-tel {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+;
+}
+
+.footer-link-map {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-link-map:hover,
+.footer-link-mail:hover,
+.footer-link-tel:hover {
+  color: var(--hover-focus-text-color);
+}
+
+.footer-adress-list {
+  list-style: none;
+  background-color: #2F303A;
+}
+
+.footer-link-map:focus,
+.footer-link-mail:focus,
+.footer-link-tel:focus {
+  color: var(--hover-focus-text-color);
+}
+
+/*-------------Main page text decoration----------*/
+.big-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.order-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #2196f3;
+}
+
+.competence-item {
+  display: inline-block;
+}
+
+.competence-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.competence-about {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--sub-text-color);
+  width: 270px;
+}
+
+.wedo-text {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.wedo-item {
+  list-style: none;
+  display: inline-block;
+}
+
+.our-team-text {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.our-team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.our-team-proffesion {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--sub-text-color);
+}
+
+.our-team-item {
+  display: inline-block;
+}
+
+/*-------------Portfolio text decoretion------------*/
+.button-item {
+  display: inline-block;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  display: inline-block;
+  background-color: #f5f4fa;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.foto-titel {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.foto-about {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--sub-text-color);
+}
+
+.foto-item {
+  display: inline-block;
+}
