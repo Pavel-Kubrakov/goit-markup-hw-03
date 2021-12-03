@@ -2,8 +2,23 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   color: var(--main-text-color);
-  height: auto;
   background-color: #f5f4fa;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+img {
+  display: block;
 }
 
 /*--------------Main site text color---------------*/
@@ -17,7 +32,11 @@ body {
 
 /*-----------------Logo stalys---------------------*/
 .logo {
-  font-family: Raleway, sans-serif
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -30,33 +49,70 @@ body {
 }
 
 /*-------------Header text decoration--------------*/
+.conteiner-flex {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-content: center;
+}
+
+.conteiner {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 .header-navigation {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  display: inline-block;
 }
 
 .header-navigation-list {
+  display: flex;
   list-style: none;
+  align-content: center;
+  padding: 0 0;
+  margin: 0 0;
 }
 
-.header-navigation-item {
-  display: inline-block;
+.header-navigation-list .header-navigation-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-navigation-link {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
   text-decoration: none;
   color: var(--main-text-color);
 }
 
 .header-conection {
-  display: inline-block;
+  list-style: none;
+  display: flex;
+  text-decoration: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  margin-left: auto;
+}
+
+.header-conection .header-conection-li + .header-conection-li {
+  margin-left: 50px;
 }
 
 .header-mail,
 .header-tel {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -74,6 +130,26 @@ body {
 }
 
 /*-------------Footer text decoration-------------*/
+
+.footer {
+  background-color: #2f303a;
+  margin-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logoft {
+  display: block;
+  margin-bottom: 10px;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
 .footer-link-mail,
 .footer-link-tel {
   font-style: normal;
@@ -82,7 +158,6 @@ body {
   line-height: 1.71;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
-;
 }
 
 .footer-link-map {
@@ -100,9 +175,12 @@ body {
   color: var(--hover-focus-text-color);
 }
 
+.footer-adress-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-adress-list {
   list-style: none;
-  background-color: #2F303A;
 }
 
 .footer-link-map:focus,
@@ -112,12 +190,24 @@ body {
 }
 
 /*-------------Main page text decoration----------*/
+.banner {
+  text-align: center;
+  height: 600px;
+  background-color: #2f303a;
+}
+
 .big-text {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  padding-top: 200px;
+  padding-left: 182px;
+  padding-right: 182px;
 }
 
 .order-button {
@@ -127,10 +217,22 @@ body {
   color: #ffffff;
   cursor: pointer;
   background-color: #2196f3;
+
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
-.competence-item {
-  display: inline-block;
+.competence-list {
+  list-style: none;
+  display: flex;
+  margin-top: 94px;
+  justify-content: space-between;
+}
+
+.competence-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .competence-title {
@@ -138,6 +240,10 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+.competence-title {
+  margin-bottom: 10px;
 }
 
 .competence-about {
@@ -149,26 +255,45 @@ body {
 }
 
 .wedo-text {
+  text-align: center;
+  margin-top: 94px;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
+}
+
+.wedo-list {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
 }
 
 .wedo-item {
   list-style: none;
-  display: inline-block;
 }
 
 .our-team-text {
+  text-align: center;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
+  margin-top: 188px;
+}
+
+.our-team-list {
+  list-style: none;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
 }
 
 .our-team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .our-team-proffesion {
@@ -176,13 +301,38 @@ body {
   font-size: 16px;
   line-height: 1.19;
   color: var(--sub-text-color);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .our-team-item {
-  display: inline-block;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*-------------Portfolio text decoretion------------*/
+
+.bgmain {
+  background: #e5e5e5;
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+}
+
+.button-item:not(:last-child) {
+  margin-right: 9px;
+}
+
 .button-item {
   display: inline-block;
 }
@@ -194,27 +344,56 @@ body {
   display: inline-block;
   background-color: #f5f4fa;
   cursor: pointer;
+
+  min-width: 73px;
+  min-height: 38px;
+  left: 495px;
+  top: 174px;
+  border-radius: 4px;
+  border-color: transparent;
 }
 
 .button:hover,
 .button:focus {
   background-color: #2196f3;
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.foto-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  list-style: none;
+}
+
+.foto-item {
+  margin-right: 30px;
+  margin-top: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.foto-item:nth-of-type(3n) {
+  margin-right: 0px;
 }
 
 .foto-titel {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
+  margin-top: 20px;
+  padding-left: 24px;
 }
 
 .foto-about {
+  margin-top: 4px;
+  padding-left: 24px;
+  padding-bottom: 20px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
   color: var(--sub-text-color);
-}
-
-.foto-item {
-  display: inline-block;
 }
