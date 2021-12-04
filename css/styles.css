@@ -49,11 +49,16 @@ img {
 }
 
 /*-------------Header text decoration--------------*/
+.header-main {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+}
+
 .conteiner-flex {
   display: flex;
   margin-right: auto;
   margin-left: auto;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   align-content: center;
@@ -62,7 +67,7 @@ img {
 .conteiner {
   margin-right: auto;
   margin-left: auto;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -131,9 +136,12 @@ img {
 
 /*-------------Footer text decoration-------------*/
 
+.footerbg {
+  background-color: #2f303a;
+}
+
 .footer {
   background-color: #2f303a;
-  margin-top: 94px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -147,7 +155,7 @@ img {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-  color: var(--main-text-color);
+  color: #ffffff;
 }
 
 .footer-link-mail,
@@ -192,8 +200,9 @@ img {
 /*-------------Main page text decoration----------*/
 .banner {
   text-align: center;
-  height: 600px;
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .big-text {
@@ -203,11 +212,8 @@ img {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 0px;
-  margin-bottom: 30px;
-  padding-top: 200px;
-  padding-left: 182px;
-  padding-right: 182px;
+  padding-left: 267px;
+  padding-right: 267px;
 }
 
 .order-button {
@@ -217,17 +223,21 @@ img {
   color: #ffffff;
   cursor: pointer;
   background-color: #2196f3;
-
-  width: 200px;
-  height: 50px;
+  min-width: 200px;
+  min-height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.competence {
+  background: #ffffff;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .competence-list {
   list-style: none;
   display: flex;
-  margin-top: 94px;
   justify-content: space-between;
 }
 
@@ -254,9 +264,13 @@ img {
   width: 270px;
 }
 
+.wedo {
+  padding-bottom: 94px;
+  background-color: #ffffff;
+}
+
 .wedo-text {
   text-align: center;
-  margin-top: 94px;
 
   font-weight: bold;
   font-size: 36px;
@@ -273,12 +287,17 @@ img {
   list-style: none;
 }
 
+.team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .our-team-text {
   text-align: center;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
-  margin-top: 188px;
 }
 
 .our-team-list {
@@ -320,7 +339,7 @@ img {
 /*-------------Portfolio text decoretion------------*/
 
 .bgmain {
-  background: #e5e5e5;
+  background: #ffffff;
 }
 
 .button-list {
@@ -364,13 +383,13 @@ img {
 .foto-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
   list-style: none;
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 
 .foto-item {
   margin-right: 30px;
-  margin-top: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
@@ -378,6 +397,10 @@ img {
 
 .foto-item:nth-of-type(3n) {
   margin-right: 0px;
+}
+
+.foto-item:nth-child(n + 4) {
+  margin-top: 30px;
 }
 
 .foto-titel {
