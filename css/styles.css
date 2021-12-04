@@ -138,10 +138,6 @@ img {
 
 .footerbg {
   background-color: #2f303a;
-}
-
-.footer {
-  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -343,10 +339,14 @@ img {
   background: #ffffff;
 }
 
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .button-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
 }
 
 .button-item:not(:last-child) {
@@ -386,7 +386,6 @@ img {
   flex-wrap: wrap;
   list-style: none;
   padding-top: 50px;
-  padding-bottom: 94px;
 }
 
 .foto-item {
@@ -408,16 +407,15 @@ img {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  margin-top: 20px;
-  padding-left: 24px;
 }
 
 .foto-about {
-  margin-top: 4px;
-  padding-left: 24px;
-  padding-bottom: 20px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
   color: var(--sub-text-color);
+}
+
+.foto-text {
+  padding: 20px 24px;
 }
